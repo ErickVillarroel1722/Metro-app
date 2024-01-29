@@ -21,7 +21,7 @@ export const Formulario = ({setEstado,idMetro}) => {
             {
                 (async function (idMetro) {
                     try {
-                        const respuesta = await (await fetch(`https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro1/${idMetro}`)).json()
+                        const respuesta = await (await fetch(`https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro/${idMetro}`)).json()
                         const {id,nombre,sector,salida,llegada,maquinista,detalles} = respuesta
                         setform({
                             ...form,
@@ -62,7 +62,7 @@ export const Formulario = ({setEstado,idMetro}) => {
         try {
 
             if(form.id){
-                const url = `https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro1/${form.id}`
+                const url = `https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro/${form.id}`
                 await fetch(url,{
                     method:'PUT',
                     body:JSON.stringify(form),
@@ -77,7 +77,7 @@ export const Formulario = ({setEstado,idMetro}) => {
                 }, 1000)
             }
             else{
-                const url ="https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro1"
+                const url ="https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro"
                             form.id = uuidv4()
                 await fetch(url,{
                     method:'POST',

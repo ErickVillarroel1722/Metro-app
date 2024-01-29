@@ -11,7 +11,7 @@ const Listar = ({ estado,setIdmetro }) => {
         if (estado || rutas.length >= 0) {
             (async function () {
                 try {
-                    const respuesta = await (await fetch("https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro1")).json()
+                    const respuesta = await (await fetch("https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro")).json()
                     setRutas(respuesta)
                     console.log("petición");
                 }
@@ -26,7 +26,7 @@ const Listar = ({ estado,setIdmetro }) => {
         try {
             const confirmar = confirm("Vas a aliminar una ruta")
             if (confirmar) {
-                const url = `https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro1/${id}`
+                const url = `https://65b81cdd46324d531d55f7e6.mockapi.io/v1/metro/${id}`
                 await fetch(url, {
                     method: 'DELETE',
                 })
