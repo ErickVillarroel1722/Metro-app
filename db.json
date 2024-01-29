@@ -25,6 +25,15 @@
       "maquinista": "Davito",
       "detalles": "EsdeBocaperoblanco",
       "id": "aaab703b-6af6-4853-bf05-6134be5e8710"
+    },
+    {
+      "nombre": "NORTE",
+      "sector": "PONCIANO",
+      "salida": "RECREO",
+      "llegada": "PONCIANO",
+      "maquinista": "Erick",
+      "detalles": "Metvrfvvfvfgfvfvsd",
+      "id": "3aab87b4-f871-40c3-9340-0517ca3be344"
     }
   ]
 }
