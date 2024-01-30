@@ -3,10 +3,11 @@ import { useState } from "react"
 import { v4 as uuidv4 } from 'uuid';
 import { useEffect } from 'react'
 
-export const Formulario = ({setEstado,idMetro}) => {
+export const Formulario = ({setEstado,idMetro,setIdmetro}) => {
 
     const [error, setError] = useState(false)
     const [mensaje, setMensaje] = useState(false)
+    const [idMetro, setIdmetro] = useState(0)
     const [form, setform] = useState({
             nombre:"",
             sector:"",
