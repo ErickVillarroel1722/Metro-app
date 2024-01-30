@@ -71,10 +71,11 @@ export const Formulario = ({setEstado,idMetro,setIdmetro}) => {
                 })
                 setEstado(true)
                 setform({})
+                setIdmetro(0);
 								setTimeout(() => {
                     setEstado(false)
                     setform({})
-                    setIdmetro(0);
+            
                     
                 }, 1000)
             }
